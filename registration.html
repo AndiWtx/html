@@ -27,10 +27,10 @@
 
       <br />
       <label for="name">First Name:</label>
-      <input type="firstname" id="firstname" name="firstname" />
+      <input type="text" id="firstname" name="firstname" />
       <br />
       <label for="lastname">Last Name:</label>
-      <input type="lastname" id="lastname" name="lastname" /> <br />
+      <input type="text" id="lastname" name="lastname" /> <br />
 
       <label for="birth">Date of birth:</label>
       <input type="date" id="birthdate" name="birth" />
@@ -39,15 +39,16 @@
       <label for="phone">Phone number:</label>
       <input type="tel" id="phonenumber" name="phone" pattern="0783248291" />
       <br />
-      <h4>Please choose a plan:</h4>
+      <label for="plans">Please choose a plan:</label>
 
-      <input type="checkbox" id="plan1" name="freeplan" />
-      <label for="freeplan">Free Plan</label><br />
-      <input type="checkbox" id="plan2" name="normalplan" />
-      <label for="normalplan">8,99$/month(TV)</label><br />
-      <input type="checkbox" id="plan3" name="goldplan" />
-      <label for="goldplan">Gold Plan(12,99$/month with all benefits)</label
-      ><br />
+      <select name="plans" id="plans">
+        <option value="plan1">Free plan</option>
+        <option value="plan2">8$/month</option>
+        <option value="plan3">10$/month</option>
+        <option value="plan4">12$/month</option>
+      </select><br><br>
+      <input type="checkbox" id="plan3" name="goldplan" >Gold Plan(12,99$/month with all benefits)</input>
+            <br />
       <label for="name">Name on card</label>
       <input type="text" id="name" name="name" /><br />
 
@@ -82,14 +83,7 @@
       /><br />
       <h4>Billing Adress:</h4>
       <label for="name">Name</label>
-      <input
-        required
-        type="text"
-        id="name"
-        name="name"
-        autocomplete="name"
-        enterkeyhint="next"
-      /><br />
+      <input required type="text" id="name" name="name" /><br />
       <label for="street-address">Street address</label>
       <input type="text" id="street-address" name="street-address" /><br />
 
